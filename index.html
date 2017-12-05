@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Instruct Internet Explorer to use its latest rendering engine -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>FCC Wikipedia Viewer</title>
+  <meta name="description" content="HTML boilerplate">
+  <meta name="author" content="Richard Keightley">
+  <link type="text/css" rel="stylesheet" href="normalize.css" />
+
+  <!-- FONT AWESOME -->
+  <script src="https://use.fontawesome.com/cc18bb2332.js"></script>
+  
+  <link rel='stylesheet' href='wiki.css' type='text/css'>
+
+    <!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div class="container">
+  <h1>Free Code Camp Wikipedia Viewer</h1>
+  <div>
+    <a href='https://en.wikipedia.org/wiki/Special:Random' id="randomArticle" target="_blank">Click <b><i>here</i></b> for a random article...</a>
+  </div> 
+  <div style="opacity: .25">...or click the search icon to search.</div>
+  <br>
+  <div id="textEntry" class='textEntry'>
+     <input autocomplete='off' id="inputValue" class="black" type="text" name="search" >
+     <i class="fa fa-times fa-3x" id='close'></i>
+  </div> 
+  <div class="box" type="button" id="btn"><i class="fa fa-search fa-3x"></i></div>
+  <div id='results'></div>
+
+
+<script src='wiki.js' type='text/javascript'></script>
+</body>
+
+</html>
